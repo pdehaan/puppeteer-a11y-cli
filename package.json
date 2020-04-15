@@ -1,0 +1,28 @@
+{
+  "name": "puppeteer-a11y-cli",
+  "description": "",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "bin": {
+    "puppeteer-a11y-cli": "cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/pdehaan/puppeteer-a11y-cli/issues"
+  },
+  "dependencies": {
+    "axe-puppeteer": "^1.1.0",
+    "puppeteer": "^2.1.1"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/pdehaan/puppeteer-a11y-cli#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
+  "main": "cli.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/puppeteer-a11y-cli.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
