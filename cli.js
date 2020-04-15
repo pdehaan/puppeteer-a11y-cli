@@ -22,7 +22,6 @@ async function main(uris) {
   for (const uri of uris) {
     await page.goto(uri);
     const results = await new AxePuppeteer(page).analyze();
-    // console.log(JSON.stringify(results, null, 2));
     const hostname = new URL(uri).hostname;
     await fs.writeFile(
       `./reports/${hostname}.json`,
