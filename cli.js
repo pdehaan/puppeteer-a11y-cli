@@ -17,8 +17,12 @@ if (args.length > 0) {
 
 async function main(uris) {
   const reportDir = process.env.REPORT_DIR || "./reports";
+  let product = process.env.BROWSER;
+  if (product !== "chrome" || product !== "firefox") {
+    product = "chrome";
+  }
 
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({product});
   const page = await browser.newPage();
   await page.setBypassCSP(true);
   await fs.ensureDir(reportDir);
